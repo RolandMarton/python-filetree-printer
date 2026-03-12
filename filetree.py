@@ -21,8 +21,10 @@ def print_tree(root, indent=""):
             print_tree(path, indent + extension)
 
 def main():
+    print('```');
     print(os.path.basename(os.getcwd()))
     print_tree(".")
+    print('```');
 
 if __name__ == '__main__':
     main()
